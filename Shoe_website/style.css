@@ -1,0 +1,269 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+/*Designing the nav section */
+body{
+    width: 100vw;
+    height:100vh;
+    overflow-x: hidden;
+}
+.nav{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    position:sticky;
+    background-color: whitesmoke;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    
+}
+.mini_nav ul{
+    list-style: none;
+}
+.mini_nav ul li{
+    display: inline;
+    margin: 10px;
+}
+.logo_heading{
+    font-size: 50px;
+    color: #c72092;
+    letter-spacing: 3px;
+}
+.s_end{
+    color:#6c14d0;
+    text-decoration: underline;
+}
+.mini_nav ul li a{
+    text-decoration: none;
+    color: #8955c3;
+}
+.credentials{
+    margin: 2px;
+}
+.buttons{
+   border: 0px;
+   font-size: 25px;
+   cursor: pointer;
+}
+.fa-heart:hover, .fa-cart-shopping:hover,.fa-user:hover{
+    color:#6c14d0 ;
+}
+/* Designing the main section*/
+.main{
+    height: 70vh;
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    z-index: 10;
+}
+.intro{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+
+}
+
+.intro_img{
+    width: 80vw;
+    height:90vh;
+    background-image: url('./image/bg1.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.shoes_img{
+    width: 80vw;
+    height: 70vh;
+    background-image: url('./image/shoes.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left:20%;
+    top:10%;
+    
+}   
+
+.links{
+    display: flex;
+    flex-direction: column;
+    height:70vh;
+    justify-content: center;
+    align-items: center;
+}
+.fa-brands{
+    margin-top: 40px;
+    margin-right: 5px;
+}
+.intro_heading{
+    position: absolute;
+    width: 50%;
+    top:20%;
+}
+.text_color{
+    
+    color:#8955c3;
+}
+.sub-main{
+    margin-top: 20px;
+
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right:3rem;
+    
+
+}
+.product{
+    height:400px;
+    width: 300px;
+    background-color:whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #6c14d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 3rem;
+
+}
+.product_img{
+    width: 150px;
+    height:150px;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.button{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    
+    border-radius: 15px;
+    background: linear-gradient(to right, #c72092, #6c14d0);
+    color: whitesmoke;
+}
+.reviews{
+    margin-top: 3rem;
+    
+}
+.customers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.customer{
+    width: 400px;
+    height: 300px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin-top: 3rem;
+
+}
+.customer_img{
+    width: 150px;
+    height:150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.login{
+    width: 100vw;
+    height:400px;
+    margin-top: 3rem;
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+    align-items: center;
+}
+.delivery, .replacement, .support{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.signup{
+    width: 100vw;
+    height:700px;
+    background-color: lightgrey;
+    background-image: url('./image/loging_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+}
+/* .signup::before{
+    content:url('./image/logshoes.png');
+    position: absolute;
+    z-index: 100;
+    height: 500px;
+    width: 400px;
+} */
+.signup::before{
+    content:'';
+    background: url('./image/logshoes.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+    height:700px;
+    width: 700px;
+    position: absolute;
+}
+
+.signup-details{
+    width: 300px;
+    height:300px;
+    position: relative;
+    top:30%;
+    left:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fields{
+    width:300px;
+    height:25px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.fields:focus{
+    outline: none;
+    
+}
+.signup-details div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
